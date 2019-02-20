@@ -7,20 +7,14 @@ tags: ['javascript']
 author: Alex
 ---
 
+`ECMAScript 6`（简称`ES6`）是于2015年6月正式发布的`JavaScript`语言的标准，正式名为`ECMAScript 2015（ES2015`）
 
-
-## 1 链接
-
-个人博客: [alex-my.xyz](http://alex-my.xyz)
-
-CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
-
-## 2 建议
+# 1 建议
 
 * 建议先看看关于this, call, apply, bind相关的内容，后文有涉及
 * 参考: [Javascript中的this,call,apply,bind函数](http://alex-my.xyz/Javascript中的this-call-apply-bind)
 
-## 3 let,var,const
+# 2 let,var,const
 
 * let用于声明变量，但只在所在的代码块中有效。
 * const定义的变量不可以修改，且必须初始化, 且只在所在的代码块中有效。
@@ -73,7 +67,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
     console.log(a);
     ```
 
-## 4 解构赋值
+# 3 解构赋值
 
 * 变量解构成功的示例
 
@@ -150,7 +144,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
             console.log(`value ${value}`);
         }
         ```
-## 5 字符串
+# 4 字符串
 
 * 遍历字符串
     
@@ -215,7 +209,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
         console.log(`say: ${'hello world'}`);   // say: hello world
         ```
 
-## 6 函数
+# 5 函数
 
 * 函数参数的默认值
     * ES6之前，不能直接为函数参数指定默认值，但可以用以下方法
@@ -386,7 +380,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
         setTimeout(() => console.log('s2: ', timer.s2), 3500);  // s2: 0
         ```
 
-## 7 数组
+# 6 数组
 
 * 扩展运算符 ...
     * 相当于rest参数的逆运算，将一个数组转为用逗号分割的参数序列
@@ -549,7 +543,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
     * 在ES6中
         * 空位被视为`undefined`。
 
-## 8 对象
+# 7 对象
 
 * 简洁表示
     * 属性简写
@@ -713,7 +707,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
         ```
         * 把数组视为属性名为0，1，2的对象。
 
-## 9 Symbol
+# 8 Symbol
 
 * 可以用于生成独一无二的属性名。
 
@@ -1012,7 +1006,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
         console.log(Object.prototype.toString.call(obj));
         ```
 
-## 10 Set, Map
+# 9 Set, Map
 
 * Set
     * `Set`类似于数组，但没有重复的值。
@@ -1161,7 +1155,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
     * `WeakMap`弱引用的只是键名，而不是键值。
     * `WeakMap`没有遍历的操作(没有`keys()`, `values()`, `entries()`),没有`size`属性,也没有`clear()`方法。
             
-## 11 Proxy
+# 10 Proxy
 
 * `Proxy`用于修改某些操作的默认行为，相当于对一些访问进行了拦截。
     
@@ -1600,7 +1594,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
     console.log(proxy.getDate()); // 25
     ```
     
-## 12 Reflect
+# 11 Reflect
 
 * `Reflect`对象和`Proxy`对象一样，也是ES6为操作对象而提供的新API。
     * 将`Object`对象的一些明显属于语言内部的方法，放到`Reflect`上。目前是同时在`Object`和`Reflect`上部署，而未来只部署在`Reflect`上。    
@@ -1655,7 +1649,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
     function setPrototypeOf(target: object, proto: any): boolean;
     ```
     
-## 13 Promise
+# 12 Promise
 
 * `Promise`是异步编程的一种解决方案。
 * `Promise`有两个特点：
@@ -1990,7 +1984,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
 * `Promise.reject(reason)`
     * A Promise that is rejected with the given reason.
 
-## 14 Iterable & Iterator
+# 13 Iterable & Iterator
 
 * In order to be iterable, an object must implement the @@iterator method.
 * An object is an iterator when it implements a next() method (A zero arguments function that returns an object with two properties: `done`, `value`).
@@ -2088,7 +2082,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
         }
         ```
 
-## 15 Generator
+# 14 Generator
     
 * `Generator` function return a generator object which conforms to both the iterable protocol and the iterator protocol.
 * Methods:
@@ -2206,7 +2200,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
         // output: h e l l o 1 2 3
         ```
         
-## 16 async & await
+# 15 async & await
 
 * `async`和`await`看上去就像是简化`Promise`或`Generator`操作。
 * 一个简单的异步示例, 每个5秒输出一些文字，有多个这样的异步操作
@@ -2364,7 +2358,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
     }
     ```
     
-## 17 Class
+# 16 Class
 
 * Class简介
     * 生成对象的传统方法就是通过构造函数。
@@ -2590,7 +2584,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
     item.bye();
     ```
     
-## 18 Module
+# 17 Module
 
 * ES6的模块自动采用严格模式，无论有没有在模块顶部添加`'use strict';`。
     * 严格模式主要有以下限制:
@@ -2650,7 +2644,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
     * `import`命令具有提升效果，会提升到整个模块头部，首先执行。
     * `import`是静态执行的，所以不能使用表达式和变量，这些只有在运行的时候才能得到结果的语法结构。
                                                           
-## 19 参考资料
+# 18 参考资料
 
 * [MDN JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 * [阮一峰 ECMAScript 6 入门](http://es6.ruanyifeng.com)

@@ -7,15 +7,9 @@ tags: ['后端']
 author: Alex
 ---
 
+记录使用`logrorate`来切个日志的过程
 
-
-## 1 链接
-
-个人博客: [alex-my.xyz](http://alex-my.xyz)
-
-CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
-
-## 2 配置
+# 1 配置
 
 - 使用系统自带的 logrorate 来切个 nginx 日志，位于**/usr/sbin/logrotate**
 - 假设服务器上有两个网站的 nginx 配置分别如下:
@@ -66,22 +60,22 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
 
 - 配置说明
 
-  | 配置                 | 说明                                                             |
-  | -------------------- | ---------------------------------------------------------------- |
-  | daily                | 指定转储周期为每天                                               |
-  | weekly               | 指定转储周期为每周                                               |
-  | monthly              | 指定转储周期为每月                                               |
-  | rotate               | 转储次数，超过将会删除最老的那一个                               |
-  | missingok            | 忽略错误，如“日志文件无法找到”的错误提示                         |
-  | dateext              | 切换后的日志文件会附加上一个短横线和 YYYYMMDD 格式的日期         |
-  | compress             | 通过 gzip 压缩转储旧的日志                                       |
-  | delaycompress        | 当前转储的日志文件到下一次转储时才压缩                           |
-  | notifempty           | 如果日志文件为空，不执行切割                                     |
-  | sharedscripts        | 只为整个日志组运行一次的脚本                                     |
-  | prerotate/endscript  | 在转储以前需要执行的命令可以放入这个对，这两个关键字必须单独成行 |
-  | postrotate/endscript | 在转储以后需要执行的命令可以放入这个对，这两个关键字必须单独成行 |
+      |         配置         |                               说明                               |
+      | -------------------- | ---------------------------------------------------------------- |
+      | daily                | 指定转储周期为每天                                               |
+      | weekly               | 指定转储周期为每周                                               |
+      | monthly              | 指定转储周期为每月                                               |
+      | rotate               | 转储次数，超过将会删除最老的那一个                               |
+      | missingok            | 忽略错误，如“日志文件无法找到”的错误提示                         |
+      | dateext              | 切换后的日志文件会附加上一个短横线和YYYYMMDD格式的日期           |
+      | compress             | 通过gzip 压缩转储旧的日志                                        |
+      | delaycompress        | 当前转储的日志文件到下一次转储时才压缩                           |
+      | notifempty           | 如果日志文件为空，不执行切割                                     |
+      | sharedscripts        | 只为整个日志组运行一次的脚本                                     |
+      | prerotate/endscript  | 在转储以前需要执行的命令可以放入这个对，这两个关键字必须单独成行 |
+      | postrotate/endscript | 在转储以后需要执行的命令可以放入这个对，这两个关键字必须单独成行 |
 
-## 3 测试
+# 2 测试
 
 - 执行以下命令进行测试
 
@@ -96,7 +90,7 @@ logrotate -vf /etc/logrotate.d/nginx
   - error.log
   - error.log-20170626
 
-## 4 添加定时任务
+# 3 添加定时任务
 
 - 每日 0 点执行脚本
 

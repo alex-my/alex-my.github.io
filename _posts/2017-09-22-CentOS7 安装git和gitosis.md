@@ -7,15 +7,9 @@ tags: ['centos', 'git']
 author: Alex
 ---
 
+后记: 个人后来还是改安装`gitlab`了，2G 内存吃紧，加上`swap`可以使用。在后来，`github`允许不限量创建私有项目了，都是好消息。
 
-
-## 1 链接
-
-个人博客: [alex-my.xyz](http://alex-my.xyz)
-
-CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
-
-## 2 环境说明
+# 1 环境说明
 
 - 服务器使用的阿里云, CentOS7.4
 - 本机使用的 Mac
@@ -49,7 +43,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
 
 - 我的机子实际 IP 地址也不是`124.123.122.121`, 随意填的
 
-## 3 安装 git
+# 2 安装 git
 
 - 卸载旧的 git
 
@@ -100,7 +94,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
   rm -rf git-2.9.5 git-2.9.5.tar.gz
   ```
 
-## 4 新建用户 git
+# 3 新建用户 git
 
 - 我们希望有专门的用户来管理 git 服务,而不是使用拥有最高权限的 root 用户
 - 新建用户 git,用于运行服务(root 用户执行)
@@ -122,7 +116,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
 
   - 会在`/home/git/.ssh`生成两个文件`id_rsa`,`id_rsa.pub`
 
-## 5 安装 gitosis
+# 4 安装 gitosis
 
 - 这是一款非常好用的权限管理工具,具体说明自行搜索
 - 安装 python 以及 python 工具,一般默认自带 2.7.5,可以照样再执行一遍
@@ -141,7 +135,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
 
   - 最后输出 `Finished processing dependencies for gitosis==0.2`表示成功
 
-## 6 配置 gitosis
+# 5 配置 gitosis
 
 - 初始化 gitosis
 
@@ -211,7 +205,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
   - 新增文件时用`git add .`
   - 如果只是修改,可以不用`git add .`，而是用`git commit -am "change"`一次性搞定
 
-## 7 使用
+# 6 使用
 
 - 创建项目(git 用户执行)
 

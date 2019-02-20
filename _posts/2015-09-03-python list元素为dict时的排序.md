@@ -1,15 +1,14 @@
 ---
 layout: post
-title: 'python list元素为dict时的排序'
+title: 'Python list元素为dict时的排序'
 date: 2015-09-03 21:21:00 +0800
 categories: ['编程']
 tags: ['python']
 author: Alex
+noexcerpt: 1
 ---
 
-
-
-## 1 简单的 dict
+# 1 简单的 dict
 
 ```
 lst = [('d', 2), ('a', 4), ('b', 3), ('c', 2)]
@@ -32,7 +31,7 @@ print lst
 [('c', 2), ('d', 2), ('b', 3), ('a', 4)]
 ```
 
-## 2 复杂的 dict
+# 2 复杂的 dict
 
 ```
 lst = [{'level': 19, 'star': 36, 'time': 1},

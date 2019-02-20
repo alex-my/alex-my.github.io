@@ -7,15 +7,9 @@ tags: ['nginx', '后端']
 author: Alex
 ---
 
+`fastcgi_cache`缓存`fastcgi`生成的内容，很多情况是`php`生成的动态的内容，少了`nginx`与`php`的通信的次数，更减轻了`php`和数据库(`mysql`)的压力
 
-
-## 1 链接
-
-个人博客: [alex-my.xyz](http://alex-my.xyz)
-
-CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
-
-## 2 fastcgi_cache 与 proxy_cache 区别
+# 1 `fastcgi_cache`与`proxy_cache`区别
 
 - 网上找了很多资料，说的大同小异。
 - proxy_cache 主要用于反向代理时，对后端内容源服务器进行缓存。
@@ -25,7 +19,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
 - 如果这是一个反向代理服务器，使用 proxy_cache 进行缓存，减少代理服务器与源服务器的通信次数。
 - 这里将使用 fastcgi_cache, 减少 nginx 与 php 的通信次数。
 
-## 3 fastcgi_cache 相关指令
+# 2 `fastcgi_cache`相关指令
 
 - 资料链接 [http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html](http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html)
 - `fastcgi_cache`
@@ -67,7 +61,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
   - Context: http, server, location
   - 对于不同的状态码设置不同的缓存时间
 
-## 4 设置示例
+# 3 设置示例
 
 - 在 nginx 的目录下有一个文件 nginx.conf, 而各个网站的具体配置则在 sites-enabled 中
 - nginx.conf
@@ -175,7 +169,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
 - 执行后刷新主页发现，在 cache 目录下有文件生成，在这个缓存有效期间，修改主页内容也不会展示出来。
 - 为了方便测试，我在主页添加了 `echo date('Y-m-d H:i:s');`, 同时将 nginx.conf 的`fastcgi_cache_path`的`inactive`设置为 1 分钟。
 
-## 5 缓存清理
+# 4 缓存清理
 
 - 方法 1
   - 使用`ngx_cache_purge`模块。
@@ -186,9 +180,9 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
 - 方法 4
   - 直接删除缓存文件夹。
 
-## 6 权限区分
+# 5 权限区分
 
-- 其实这个缓存更适合无关用户状态且改变很少的内容。
+- 其实这个缓存更适合无关用户状态且改变很少的内容，比如你的文章。
 - 如果与用户状态有关，就会发生内容串了的问题。
 - 可以借助修改`fastcgi_cache_key`来区分。
 - 方法 1: 使用 ip 区分
@@ -202,6 +196,6 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
 
   - 还有端口，`$remote_port`。
 
-## 7 参考
+# 6 参考
 
 - [http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html](http://nginx.org/en/docs/http/ngx_http_fastcgi_module.html)

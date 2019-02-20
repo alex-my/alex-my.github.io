@@ -5,15 +5,14 @@ date: 2018-03-14 11:15:32 +0800
 categories: ['编程']
 tags: ['php']
 author: Alex
+noexcerpt: 1
 ---
 
-## 1 链接
+[TOC]
 
-个人博客: [alex-my.xyz](http://alex-my.xyz)
+---
 
-CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
-
-# 2 代码与说明
+# 1 代码与说明
 
 - 说明
 
@@ -53,7 +52,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
   }
   ```
 
-# 3 示例
+# 2 示例
 
 ```txt
 $iv = 'a123456789012345';
@@ -68,4 +67,4 @@ echo "str2: {$str2} <br>";  // 输出：123456
 ```
 
 - 可上以下网站进行检测
-  - [http://www.seacha.com/tools/aes.html](http://www.seacha.com/tools/aes.html)
+  - [keylala 在线检测工具](https://www.keylala.cn)

@@ -1,20 +1,17 @@
 ---
 layout: post
-title: '在phpStorm中使用xdebug调试'
+title: '在PHPStorm中使用xdebug调试'
 date: 2017-02-10 17:16:18 +0800
 categories: ['编程']
 tags: ['php', 'xdebug']
 author: Alex
+noexcerpt: 1
 ---
 
-- content
-  {:toc}
-
-## 1 环境说明
+# 1 环境说明
 
 在 mac 下搭建的 lnmp 环境，可以参考:
-[Mac 搭建 lnmp 环境](http://blog.csdn.net/alex_my/article/details/53818143)
-http://blog.csdn.net/alex_my/article/details/53818143
+[Mac 搭建 lnmp 环境](http://alex-my.xyz/Mac%E6%90%AD%E5%BB%BAlnmp%E7%8E%AF%E5%A2%83)
 <br>
 nginx 中的网站配置:
 

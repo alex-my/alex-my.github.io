@@ -5,17 +5,10 @@ date: 2017-08-12 18:45:23 +0800
 categories: ['编程']
 tags: ['javascript']
 author: Alex
+noexcerpt: 1
 ---
 
-
-
-## 1 链接
-
-个人博客: [alex-my.xyz](http://alex-my.xyz)
-
-CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
-
-## 2 this
+# 1 `this`
 
 - 对于顶层对象的概念:
   - 在浏览器中是 window,但是 node 和 Web Worker 里面没有 window。
@@ -70,7 +63,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
   setTimeout(() => { console.log('s2: ', timer.s2) }, 3500)   // 输出 s2: 0
   ```
 
-## 3 call 与 apply
+# 2 `call`与`apply`
 
 - 二者作用差不多，会修改函数体内的`this`指向。
 
@@ -123,7 +116,7 @@ CSDN: [blog.csdn.net/alex_my](http://blog.csdn.net/alex_my)
   a(1, 2);
   ```
 
-## 4 bind
+# 3 `bind`
 
 - 对于给定的函数，会创建一个绑定函数，这个绑定函数的 this 会指向传入的对象
 
@@ -148,10 +141,11 @@ var foo2 = log.bind(people, 1, 2);
 foo2();
 ```
 
-## 5 一个有意思的示例
+# 4 `一个有意思的示例`
 
 - 来源: [Alex MacCaw 如何面试前端工程师：GitHub 很重要](https://segmentfault.com/a/1190000000375138?page=1)
 - 关于 apply
+
   ```
   function log() {
       var args = Array.prototype.slice.call(arguments);
@@ -162,6 +156,7 @@ foo2();
   log('hello', 'world');          // 输出 2017-8-12 18:11:26 hello world
   log('hello');                   // 输出 2017-8-12 18:11:26 hello
   ```
+
 - 关于 bind
 
   ```
@@ -185,7 +180,7 @@ foo2();
   console.log(func2()); // 输出 1
   ```
 
-## 6 参考资料
+# 5 参考资料
 
 - [JavaScript 语言精粹](https://book.douban.com/subject/3590768/)
 - [Alex MacCaw 如何面试前端工程师：GitHub 很重要](https://segmentfault.com/a/1190000000375138?page=1)
