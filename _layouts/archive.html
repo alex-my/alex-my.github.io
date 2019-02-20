@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="archive">
+    {% for post in site.posts %}
+    {% for category in post.categories %}
+    {% if category == page.category %}
+    <div class="archive-item">
+        <a href="{{site.url}}{{site.baseurl}}{{post.url}}">
+            <div class="archive-date">
+                <span>{{ post.date | date: "%B %d, %Y" }}</span>
+            </div>
+            <h1>{{post.title}}</h1>
+            <div class="archive-excerpt">
+                {{post.excerpt | truncatewords: 30}}
+            </div>
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+</article>
+
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+    {% endif %}
+
+    <span>{{ paginator.page }}</span>
+</div>

@@ -1,0 +1,22 @@
+title: alex-my
+email: alex_my@126.com
+keywords: 博客
+description: >- # this means to ignore newlines until "baseurl:"
+  DO LESS GET MORE
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'http://alex-my.xyz' # the base hostname & protocol for your site, e.g. http://example.com
+github_username: alex-my
+
+paginate: 10
+
+theme-dark: false
+permalink: /:title
+sass:
+  sass_dir: _sass
+  style: compressed
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate

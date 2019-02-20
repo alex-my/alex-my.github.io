@@ -1,0 +1,21 @@
+.post {
+    margin: 3rem auto 1rem auto;
+    width: 45%;
+
+    .post-header {
+        .post-title {
+            text-align: center;
+            font-size: 3.5rem;
+        }
+
+        .post-header-meta {
+            color: gray;
+            text-align: center;
+
+            .date {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+}

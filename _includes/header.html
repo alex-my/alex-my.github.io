@@ -1,0 +1,20 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="{{site.keywords}}">
+    <meta name="description" content="{{site.description}}">
+    {% if page.title %}
+    <title>{{ page.title | append: ' - ' | append: site.title }}</title>
+    {% else %}
+    <title>{{ site.title }}</title>
+    {% endif %}
+    <link rel="bookmark" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/touch-icon-iphone4.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-ipad3-144.png" />
+    <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | prepend: site.baseurl }}" />
+</head>

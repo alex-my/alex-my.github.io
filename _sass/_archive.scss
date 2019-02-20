@@ -1,0 +1,52 @@
+@import 'variables';
+
+.archive {
+    margin-top: 2rem;
+
+    .archive-item {
+        color: black;
+        border-top: .0625rem solid #EAEAEA;
+        margin: 1rem auto 1rem auto;
+        width: 45%;
+
+        .archive-date {
+            color: gray;
+            margin-top: 1rem;
+        }
+
+        .archive-excerpt {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.pagination {
+    font-family: $serif-secondary;
+    padding-top: 2rem;
+    position: relative;
+    text-align: center;
+
+    span {
+        color: $default-shade;
+        font-size: 1.1rem;
+    }
+
+    .arrow {
+        color: $default-color;
+        position: absolute;
+
+        &:hover,
+        &:focus {
+            opacity: .6;
+            text-decoration: none;
+        }
+    }
+
+    .left {
+        left: 40%;
+    }
+
+    .right {
+        right: 40%;
+    }
+}

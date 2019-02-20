@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <a href="/">
+        <div class="site-title">
+            {{site.title}}
+        </div>
+    </a>
+</div>
+<div class="wrapper">
+    <div class="site-nav">
+        <a class="nav-link" href="{{site.url}}{{site.baseurl}}">首页</a>
+        {% for p in site.pages %}
+        {% if p.title %}
+
+        <span class="exclamationMark">/</span><a class="nav-link" href="{{p.url | prepend: site.baseurl }}">{{p.title}}</a>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,33 @@
+@import 'variables';
+
+.site-title {
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    font-weight: 100;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+
+.site-nav {
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.nav-link {
+    line-height: $base-line-height;
+    color: gray;
+
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    &:hover {
+        border-bottom: .125rem solid black;
+    }
+}
+
+.exclamationMark {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
