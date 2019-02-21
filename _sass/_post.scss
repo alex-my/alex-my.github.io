@@ -38,6 +38,10 @@
 
     .post-content {
         margin-top: 2rem;
+
+        a {
+            border-bottom: .0625rem solid $oc-black;
+        }
     }
 }
 
