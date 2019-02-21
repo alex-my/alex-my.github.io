@@ -1,0 +1,61 @@
+.tags {
+    margin: 2rem auto;
+    width: 50%;
+
+    .label {
+        >li {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 300;
+            display: inline;
+
+            >a {
+                display: inline-block;
+                margin: 1px;
+                color: gray;
+                background-color: #eaeaea;
+                border-radius: 3px;
+
+                span {
+                    float: left;
+                    padding: .5px 5px;
+
+                    &.count {
+                        background-color: #dee2e6;
+                        border-radius: 0 3px 3px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .tag-list {
+        margin-left: 3rem;
+
+        .tag {
+            a {
+                color: #343a40;
+            }
+
+            .time {
+                color: #343a88;
+                font-size: .75rem;
+                font-weight: 300;
+                margin-left: 3px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .tags {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tags {
+        width: 100%;
+    }
+}

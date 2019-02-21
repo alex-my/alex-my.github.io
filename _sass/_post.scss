@@ -15,6 +15,28 @@
             .date {
                 margin-left: 1rem;
             }
+
+            .tag {
+                display: inline;
+                font-weight: 300;
+
+                li:before {
+                    content: '';
+                }
+
+                li {
+                    display: inline;
+                    margin: 0;
+
+                    >a {
+                        margin: 3px 3px 3px 0;
+                        padding: .5px 4px;
+                        color: gray;
+                        background-color: #eaeaea;
+                        border-radius: 3px;
+                    }
+                }
+            }
         }
     }
 
