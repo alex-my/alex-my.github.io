@@ -22,6 +22,12 @@
             margin-top: 1rem;
         }
     }
+
+    @media screen and (max-width: 900px) {
+        .archive-item {
+            width: 90%;
+        }
+    }
 }
 
 .pagination {
