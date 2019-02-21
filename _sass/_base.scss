@@ -1,6 +1,65 @@
-.wrapper {
-    margin: 0 auto;
-    text-align: center;
+@import 'variables';
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: $font-weight #{$font-size}/#{$font-line-height} $font-family;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern"1;
+    -moz-font-feature-settings: "kern"1;
+    -o-font-feature-settings: "kern"1;
+    font-feature-settings: "kern"1;
+    font-kerning: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+ul,
+ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+
+    >ul,
+    >ol {
+        margin-bottom: 0;
+    }
+
+    list-style-type: none;
 }
 
 a {
@@ -14,87 +73,32 @@ a {
     }
 }
 
-li {
-    list-style-type: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight;
 }
 
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid #e8e8e8;
-    border-radius: 3px;
-    background-color: #eaeaea;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-}
-
-pre>code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-}
-
-
-/*
-  Table styles copied from Bootstrap
-  Copyright (c) 2013 Twitter, Inc
-*/
-
-table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 1.5rem;
+blockquote {
+    border-left: .25rem solid;
+    padding-left: $spacing-unit / 2;
     font-size: 1.125rem;
-    overflow-x: auto;
-    display: block;
+    letter-spacing: -0.0625rem;
+    font-style: italic;
 
-    // Cells
-    >thead,
-    >tbody,
-    >tfoot {
-        >tr {
-
-            >th,
-            >td {
-                padding: 12px;
-                line-height: 1.2;
-                vertical-align: top;
-                border-top: 1px solid #333;
-            }
-        }
+    > :last-child {
+        margin-bottom: 0;
     }
+}
 
-    // Bottom align for column headings
-    >thead>tr>th {
-        vertical-align: bottom;
-        border-bottom: 2px solid #333;
-    }
+img {
+    max-width: 100%;
+}
 
-    // Remove top border from thead by default
-    >caption+thead,
-    >colgroup+thead,
-    >thead:first-child {
-        >tr:first-child {
-
-            >th,
-            >td {
-                border-top: 0;
-            }
-        }
-    }
-
-    // Account for multiple tbody instances
-    >tbody+tbody {
-        border-top: 2px solid #333;
-    }
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
 }

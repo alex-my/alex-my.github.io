@@ -6,11 +6,11 @@ code {
 }
 
 code {
-    background-color: $grey-3;
-    border-radius: 3px;
-    color: $code-color;
+    background-color: $oc-gray-3;
+    border-radius: .25rem;
+    color: $oc-red-8;
     font-size: 85%;
-    padding: .25em .5em;
+    padding: .25em .45em;
 }
 
 pre {
@@ -25,24 +25,68 @@ pre code {
 }
 
 .highlight {
-    background-color: $grey-3;
-    border-radius: 3px;
+    background-color: $oc-gray-1;
+    border-radius: .3125rem;
     line-height: 1.4;
+    font-weight: 300;
     margin: 0 0 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
 
     pre {
-        margin-bottom: 0;
         overflow-x: auto;
     }
 
     .lineno {
-        color: $default-tint;
+        color: $oc-gray-7;
         display: inline-block; // Ensures the null space also isn't selectable
         padding: 0 .75rem 0 .25rem;
         // Make sure numbers aren't selectable
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
+    }
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    overflow-x: auto;
+    display: block;
+
+    // Cells
+    >thead,
+    >tbody,
+    >tfoot {
+        >tr {
+
+            >th,
+            >td {
+                padding: 12px;
+                line-height: 1.2;
+                vertical-align: top;
+                border-top: 1px solid $oc-gray-8;
+                border-right: 1px solid $oc-gray-8;
+            }
+        }
+    }
+
+    // Remove top border from thead by default
+    >caption+thead,
+    >colgroup+thead,
+    >thead:first-child {
+        >tr:first-child {
+
+            >th,
+            >td {
+                border-top: 0;
+            }
+        }
+    }
+
+    // Account for multiple tbody instances
+    >tbody+tbody {
+        border-top: 2px solid #333;
     }
 }

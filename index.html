@@ -9,7 +9,7 @@ layout: default
             <div class="archive-date">
                 <span>{{ post.date | date: "%B %d, %Y" }}</span>
             </div>
-            <h1><span class="archive-title">{{post.title}}</span></h1>
+            <h1 class="archive-title"><span>{{post.title}}</span></h1>
             {% if post.noexcerpt != 1 %}
             <div class="archive-excerpt">
                 {{post.excerpt | truncatewords: 30}}

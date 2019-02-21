@@ -1,6 +1,6 @@
 .post {
-    margin: 3rem auto 1rem auto;
     width: 45%;
+    margin: 3rem auto 1rem auto;
 
     .post-header {
         .post-title {
@@ -9,41 +9,52 @@
         }
 
         .post-header-meta {
-            color: gray;
+            color: $oc-gray-7;
             text-align: center;
 
             .date {
-                margin-left: 1rem;
+                margin-left: 0.4rem;
             }
 
             .tag {
                 display: inline;
                 font-weight: 300;
 
-                li:before {
-                    content: '';
-                }
-
                 li {
                     display: inline;
                     margin: 0;
 
-                    >a {
-                        margin: 3px 3px 3px 0;
-                        padding: .5px 4px;
-                        color: gray;
-                        background-color: #eaeaea;
-                        border-radius: 3px;
+                    a {
+                        margin: .1875rem .1875rem .1875rem 0;
+                        padding: .03125rem .25rem;
+                        color: $oc-gray-7;
+                        background-color: $oc-gray-4;
+                        border-radius: .1875rem;
                     }
                 }
             }
         }
     }
 
+    .post-content {
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .post {
         width: 90%;
+    }
+}
+
+@include media-query($lg) {
+    .post {
+        width: 90%;
+    }
+}
+
+@include media-query($xs) {
+    .post {
+        width: 98%;
     }
 }

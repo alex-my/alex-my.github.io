@@ -4,26 +4,28 @@
     margin-top: 2rem;
 
     .archive-item {
-        color: black;
-        border-top: .0625rem solid #EAEAEA;
+        color: $oc-black;
+        border-top: .0625rem solid $oc-gray-4;
         margin: 1rem auto 1rem auto;
         width: 45%;
 
-        .archive-title {
-            font-style: italic;
-        }
-
         .archive-date {
-            color: gray;
+            color: $oc-gray-6;
             margin-top: 1rem;
         }
 
+        .archive-title {
+            padding-top: 1rem;
+            font-weight: bold;
+        }
+
         .archive-excerpt {
+            color: $oc-gray-6;
             margin-top: 1rem;
         }
     }
 
-    @media screen and (max-width: 900px) {
+    @include media-query($lg) {
         .archive-item {
             width: 90%;
         }
@@ -31,23 +33,22 @@
 }
 
 .pagination {
-    font-family: $serif-secondary;
     padding-top: 2rem;
     position: relative;
     text-align: center;
 
     span {
-        color: $default-shade;
+        color: $oc-gray-7;
         font-size: 1.1rem;
     }
 
     .arrow {
-        color: $default-color;
+        color: $oc-gray-7;
         position: absolute;
 
         &:hover,
         &:focus {
-            opacity: .6;
+            opacity: .5;
             text-decoration: none;
         }
     }
