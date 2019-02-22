@@ -6,11 +6,11 @@ code {
 }
 
 code {
-    background-color: $oc-gray-3;
+    background-color: $oc-gray-4;
     border-radius: .25rem;
-    color: $oc-red-8;
+    color: $oc-red-9;
     font-size: 85%;
-    padding: .25em .45em;
+    padding: .15em .25em;
 }
 
 pre {
@@ -25,7 +25,7 @@ pre code {
 }
 
 .highlight {
-    background-color: $oc-gray-1;
+    background-color: $oc-gray-4;
     border-radius: .3125rem;
     line-height: 1.4;
     font-weight: 300;
