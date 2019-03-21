@@ -1,0 +1,4 @@
+User-agent: *
+Allow: *
+Sitemap: http://www.alex-my.xyz/sitemap.xml
+Sitemap: http://www.alex-my.xyz/sitemap.html
