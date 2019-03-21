@@ -5,6 +5,7 @@ date: 2017-08-11 12:27:43 +0800
 categories: ['编程']
 author: Alex
 noexcerpt: 1
+permalink: /vscode-configuration
 ---
 
 ## 1 typings

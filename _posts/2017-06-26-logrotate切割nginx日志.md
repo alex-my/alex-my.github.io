@@ -5,6 +5,7 @@ date: 2017-06-26 12:35:00 +0800
 categories: ['编程']
 tags: ['后端']
 author: Alex
+permalink: /logrotate-cut-nginx-log
 ---
 
 记录使用`logrorate`来切个日志的过程

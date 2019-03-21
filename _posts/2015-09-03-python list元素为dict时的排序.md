@@ -6,6 +6,7 @@ categories: ['编程']
 tags: ['python']
 author: Alex
 noexcerpt: 1
+permalink: /python-list-dict-sort
 ---
 
 # 1 简单的 dict

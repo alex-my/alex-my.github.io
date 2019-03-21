@@ -5,6 +5,7 @@ date: 2018-10-11 20:35:55 +0800
 categories: ['编程']
 tags: ['数据库', 'sequelize']
 author: Alex
+permalink: /get-started-with-sequelize
 ---
 
 `Sequelize`是一款基于 Nodejs 功能强大的异步 ORM 框架，同时支持 PostgreSQL, MySQL, SQLite and MSSQL 多种数据库，很适合作为 Nodejs 后端数据库的存储接口

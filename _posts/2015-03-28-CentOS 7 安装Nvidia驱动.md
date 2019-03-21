@@ -5,6 +5,7 @@ date: 2015-03-28 20:45:00 +0800
 categories: ['编程']
 tags: ['centos']
 author: Alex
+permalink: /centos7-nvidia-driver
 ---
 
 在`centos7`上安装`nvidia`驱动

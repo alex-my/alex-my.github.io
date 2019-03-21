@@ -5,6 +5,7 @@ date: 2017-07-27 13:42:57 +0800
 categories: ['编程']
 tags: ['nginx', '后端']
 author: Alex
+permalink: /nginx-fastcgi-cache
 ---
 
 `fastcgi_cache`缓存`fastcgi`生成的内容，很多情况是`php`生成的动态的内容，少了`nginx`与`php`的通信的次数，更减轻了`php`和数据库(`mysql`)的压力

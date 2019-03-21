@@ -6,10 +6,7 @@ categories: ['编程']
 tags: ['php']
 author: Alex
 noexcerpt: 1
----
-
-[TOC]
-
+permalink: /php-openssl-implement-aes
 ---
 
 # 1 代码与说明

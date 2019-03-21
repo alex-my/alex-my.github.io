@@ -5,6 +5,7 @@ date: 2017-09-22 13:26:32 +0800
 categories: ['编程']
 tags: ['centos', 'git']
 author: Alex
+permalink: /centos7-install-git-gitosis
 ---
 
 后记: 个人后来还是改安装`gitlab`了，2G 内存吃紧，加上`swap`可以使用。在后来，`github`允许不限量创建私有项目了，都是好消息。

@@ -6,6 +6,7 @@ categories: ['编程']
 tags: ['javascript']
 author: Alex
 noexcerpt: 1
+permalink: /js-thi-call-apply-bind
 ---
 
 # 1 `this`
