@@ -1,6 +1,9 @@
 .post {
     width: 55%;
     margin: 3rem auto 1rem auto;
+    padding: 1rem 3rem 3rem 3rem;
+
+    border: .0625rem solid $oc-gray-4;
 
     .post-header {
         .post-title {
@@ -54,6 +57,8 @@
 @include media-query($lg) {
     .post {
         width: 90%;
+        padding: auto;
+        border: none;
     }
 }
 

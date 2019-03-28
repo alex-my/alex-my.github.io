@@ -6,9 +6,9 @@ code {
 }
 
 code {
-    background-color: $oc-gray-4;
+    background-color: $oc-gray-8;
     border-radius: .25rem;
-    color: $oc-red-9;
+    color: $oc-gray-0;
     font-size: 85%;
     padding: .15em .25em;
 }
@@ -19,17 +19,18 @@ pre {
 
 pre code {
     background-color: transparent;
-    color: inherit;
+    // color: inherit;
+    color: $oc-gray-0;
     font-size: 100%;
     padding: 0;
 }
 
 .highlight {
-    background-color: $oc-gray-4;
+    background-color: $oc-gray-8;
     border-radius: .3125rem;
     line-height: 1.4;
     font-weight: 300;
-    margin: 0 0 1rem;
+    margin: 0 0 0.25rem;
     padding: 0.5rem;
 
     pre {
@@ -66,8 +67,6 @@ table {
                 padding: 12px;
                 line-height: 1.2;
                 vertical-align: top;
-                border-top: 1px solid $oc-gray-8;
-                border-right: 1px solid $oc-gray-8;
             }
         }
     }
