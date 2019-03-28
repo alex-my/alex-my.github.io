@@ -2,9 +2,9 @@
 <urlset>
 <url>
 <loc>
-<![CDATA[https://alex-my.xyz]]>
+<![CDATA["http://alex-my.xyz/git-clear-history"]]>
 </loc>
-<lastmod>2018-12-25</lastmod>
+<lastmod>2019-03-28</lastmod>
 <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -213,6 +213,13 @@
 <![CDATA["http://alex-my.xyz/centos-install-gcc490"]]>
 </loc>
 <lastmod>2013-03-05</lastmod>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>
+<![CDATA[https://alex-my.xyz]]>
+</loc>
+<lastmod>2018-12-25</lastmod>
 <changefreq>monthly</changefreq>
 </url>
 </urlset>

@@ -1,3 +1,4 @@
+http://alex-my.xyz/git-clear-history
 http://alex-my.xyz/git-common-instructions
 http://alex-my.xyz/get-started-with-sequelize
 http://alex-my.xyz/google-payment-verification
