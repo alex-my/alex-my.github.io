@@ -22,4 +22,14 @@ layout: default
     <div class="post-content">
         {{content}}
     </div>
+    <div class="copyright">
+        <ul>
+            <li>版权属于: {{page.author}}</li>
+            <li>
+                本文连接: <a
+                    href="{{site.url}}{{site.baseurl}}{{page.permalink}}">{{site.url}}{{site.baseurl}}{{page.permalink}}</a>
+            </li>
+            <li>转载声明: 请注明内容出处及本声明,谢谢</li>
+        </ul>
+    </div>
 </article>
